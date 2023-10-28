@@ -157,9 +157,7 @@ export function SideBar(props: { className?: string }) {
           icon={<MaskIcon />}
           text={shouldNarrow ? undefined : "充值"}
           className={styles["sidebar-bar-button"]}
-          onClick={() => {
-            window.open("https://one.mkzero.top:44301", "_blank");
-          }}
+          onClick={() => showToast("充值地址：https://one.mkzero.top:44301")}
           shadow
         />
         <IconButton
